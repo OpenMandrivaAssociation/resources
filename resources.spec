@@ -1,5 +1,5 @@
 %undefine _debugsource_packages
-%define appid net.nokyan.Resources
+%define appid net.nokyan.Resources.Devel
 
 Name:           resources
 Version:        1.7.0
@@ -41,10 +41,10 @@ processes, written in Rust and using GTK 4 and libadwaita for its GUI.
 %license LICENSE
 %doc README.md
 %{_bindir}/%{name}
-#{_datadir}/applications/%{appid}.desktop
+%{_datadir}/applications/%{appid}.desktop
 %{_datadir}/%{name}/
-#{_datadir}/glib-2.0/schemas/%{appid}.gschema.xml
-#{_datadir}/icons/hicolor/*/apps/%{appid}*.svg
-#{_datadir}/metainfo/%{appid}.metainfo.xml
-#{_datadir}/polkit-1/actions/%{appid}.policy
+%{_datadir}/glib-2.0/schemas/%{appid}.gschema.xml
+%{_datadir}/icons/hicolor/*/apps/%{appid}*.svg
+%{_datadir}/metainfo/%{appid}.metainfo.xml
+%{_datadir}/polkit-1/actions/%{appid}.policy
 %{_libexecdir}/%{name}/
