@@ -10,7 +10,9 @@ URL:            https://github.com/nokyan/resources
 Source0:        https://github.com/nokyan/resources/archive/v%{version}/%{name}-%{version}.tar.gz
 Source1:        vendor.tar.xz
 
+BuildRequires:  appstream
 BuildRequires:  appstream-util
+BuildRequires:  git
 BuildRequires:  rust-packaging
 BuildRequires:  meson
 BuildRequires:  pkgconfig(gtk4)
@@ -21,7 +23,6 @@ Requires:       polkit
 %description
 Resources is a simple yet powerful monitor for your system resources and
 processes, written in Rust and using GTK 4 and libadwaita for its GUI.
-
 
 %prep
 %autosetup -a1
