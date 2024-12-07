@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
-%define appid net.nokyan.Resources.Devel
+%define appid net.nokyan.Resources
 
 Name:           resources
-Version:        1.7.0
+Version:        1.7.1
 Release:        1
 Summary:        Monitor your system processes
 License:        GPL-3.0-or-later
@@ -29,7 +29,7 @@ processes, written in Rust and using GTK 4 and libadwaita for its GUI.
 %autosetup -a1
 
 %build
-%meson
+%meson -Dprofile=default
 %meson_build
 
 %install
