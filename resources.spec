@@ -26,7 +26,16 @@ Resources is a simple yet powerful monitor for your system resources and
 processes, written in Rust and using GTK 4 and libadwaita for its GUI.
 
 %prep
-%autosetup -a1
+%autosetup -a1 -a 1
+
+cat >>Cargo.toml <<EOF
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+EOF
 
 %build
 %meson -Dprofile=default
