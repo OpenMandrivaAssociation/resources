@@ -27,6 +27,7 @@ processes, written in Rust and using GTK 4 and libadwaita for its GUI.
 
 %prep
 %autosetup -a1 -a 1
+%cargo_prep -v vendor
 
 cat >>Cargo.toml <<EOF
 
