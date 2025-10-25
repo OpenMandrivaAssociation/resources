@@ -2,7 +2,7 @@
 %define appid net.nokyan.Resources
 
 Name:           resources
-Version:        1.8.0
+Version:        1.9.0
 Release:        1
 Summary:        Monitor your system processes
 License:        GPL-3.0-or-later
