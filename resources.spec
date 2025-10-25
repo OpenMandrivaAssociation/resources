@@ -12,6 +12,7 @@ Source1:        vendor.tar.xz
 
 BuildRequires:  appstream
 BuildRequires:  appstream-util
+BuildRequireS:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  git
 BuildRequires:  rust-packaging
