@@ -2,7 +2,7 @@
 %define appid net.nokyan.Resources
 
 Name:           resources
-Version:        1.9.0
+Version:        1.9.1
 Release:        1
 Summary:        Monitor your system processes
 License:        GPL-3.0-or-later
@@ -12,7 +12,7 @@ Source1:        vendor.tar.xz
 
 BuildRequires:  appstream
 BuildRequires:  appstream-util
-BuildRequireS:  desktop-file-utils
+BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  git
 BuildRequires:  rust-packaging
